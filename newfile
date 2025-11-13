@@ -23,6 +23,13 @@ stages{
           sh "java Program1"
               }
         }
+stage('Test python'){
+              steps{
+
+          echo "Testing...."
+          sh "python3 new.py"
+              }
+        }
 
  }
 }
