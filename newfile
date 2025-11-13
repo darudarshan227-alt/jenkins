@@ -13,14 +13,14 @@ stages{
       stage('Build'){
             steps{
                 echo "Building..."
-                 sh " javac program1.java" 
+                 sh " javac Program1.java" 
             }
       }
     stage('Test'){
               steps{
 
           echo "Testing...."
-          sh "java program1"
+          sh "java Program1"
               }
         }
 
