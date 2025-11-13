@@ -1,9 +1,5 @@
 pipeline{
 agent any
-tools
-{
-jdk:"jdk2"
-}
 stages{
   
       stage('Checkout'){
