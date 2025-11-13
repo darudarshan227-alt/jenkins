@@ -8,20 +8,20 @@ stages{
   
       stage('Checkout'){
             steps{
-                git branch:'main',url:'https://github.com/darudarshan227-alt/jenkins/new/main'
+                git branch:'main',url:'https://github.com/darudarshan227-alt/jenkins'
                   }
       }
       stage('Build'){
             steps{
                 echo "Building..."
-                sh javac program1.java
+                
             }
       }
     stage('Test'){
               steps{
 
           echo "Testing...."
-          java program1
+          
               }
         }
 
