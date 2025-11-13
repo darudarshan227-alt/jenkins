@@ -1,6 +1,8 @@
 pipeline{
 agent any
-
+tools {
+jdk "jdk21"
+}
 stages{
   
       stage('Checkout'){
@@ -11,15 +13,14 @@ stages{
       stage('Build'){
             steps{
                 echo "Building..."
-               echo "Welcome to Java " 
+                 sh " javac program1.java" 
             }
       }
     stage('Test'){
               steps{
 
           echo "Testing...."
-          echo "Running JAVA file"
-          echo "Welcome to Jenkins...."
+          sh "java program1"
               }
         }
 
